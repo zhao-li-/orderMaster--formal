@@ -7,4 +7,24 @@ angular.module('orderMasterApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.people =[
+        {
+            "name":"赵大"
+        },
+        {
+            "name":"钱二"
+        },
+        {
+            "name":"张三"
+        },
+        {
+            "name":"李四"
+        },
+        {
+            "name":"王五"
+        },
+        {
+            "name":"刘六"
+        }
+    ];
   });

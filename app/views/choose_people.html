@@ -1,4 +1,10 @@
 <header>
     选人
     <button class="header-left btn-4" style="margin-top: 5px">Back</button>
+    <ul class="list-style-2">
+        <li style="clear: both" ng-repeat="person in people">
+            <h3 style="color: #000000;float:left;">{{person.name}}</h3>
+            <span class="glyphicon glyphicon-circle-arrow-right " style="color: #8F8F8F;float:right"></span>
+        </li>
+    </ul>
 </header>
