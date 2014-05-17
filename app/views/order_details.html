@@ -1,16 +1,16 @@
-<header>
+<header class="header">
     订餐
-    <button class="header-left btn-4" style="margin-top: 5px">Back</button>
+    <button class="btn btn-primary header-left" >Back</button>
 </header>
 <div class="wrapper">
-    <p>人：</p>
+    <h4>人：</h4>
     <div class="well"></div>
-    <button class="btn btn-2" style="margin: 5px 10px;line-height: 35px" ng-click="choose_people()">选人</button>
-    <p>餐厅：</p>
+    <button class="btn btn-default btn-lg btn-block"  ng-click="choose_people()">选人</button>
+    <h4>餐厅：</h4>
     <div class="well"></div>
-    <button class="btn btn-2" style="margin: 5px 10px;line-height: 35px">选餐厅</button>
-    <p>套餐：</p>
+    <button class="btn btn-default btn-lg btn-block"  ng-click="choose_restaurant()">选餐厅</button>
+    <h4>套餐：</h4>
     <div class="well"></div>
-    <button class="btn btn-2" style="margin: 5px 10px;line-height: 35px">选套餐</button>
-    <button class="btn btn-2" style="margin: 5px 10px;line-height: 35px">确认</button>
+    <button class="btn btn-default btn-lg btn-block"  ng-click="choose_package()">选套餐</button>
+    <button class="btn btn-default btn-lg btn-block"  ng-click="confirm_order()">确认</button>
 </div>
