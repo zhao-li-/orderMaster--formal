@@ -1,4 +1,4 @@
-var restaurants = [
+var restaurants_data = [
     {
         "name": "KFC"
     },

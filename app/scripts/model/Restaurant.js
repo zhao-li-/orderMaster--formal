@@ -3,17 +3,7 @@ function Restaurant(restaurant_name){
 }
 
 Restaurant.get_all_restaurants = function(){
-	return [
-    {
-        "name": "KFC"
-    },
-    {
-        "name": "7-11"
-    },
-    {
-        "name": "成都小吃"
-    }
-];
+	return restaurants_data
 }
 
 Restaurant.prototype.save=function(){

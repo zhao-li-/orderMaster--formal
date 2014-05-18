@@ -25,6 +25,7 @@ angular.module('orderMasterApp')
         $scope.choosed_restaurant = !Restaurant.get_chose_restaurant_name();
         $scope.choosed_all_infomation = !Person.get_chose_person_name() || !Restaurant.get_chose_restaurant_name() || !Food.get_chose_food_name();
         $scope.confirm_order = function(){
-            
+            var order = new Order();
+            console.log(order);
         }
     });

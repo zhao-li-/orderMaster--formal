@@ -1,4 +1,4 @@
-var foods = {
+var foods_data = {
   "KFC":[
       {
           "name":"田园脆鸡堡",
