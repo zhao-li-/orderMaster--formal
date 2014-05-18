@@ -21,6 +21,14 @@ angular
             templateUrl: 'views/choose_people.html',
             controller: 'ChoosePeopleCtrl'
         })
+        .when('/choose_restaurants', {
+            templateUrl: 'views/choose_restaurants.html',
+            controller: 'ChooseRestaurantsCtrl'
+        })
+        .when('/choose_foods', {
+            templateUrl: 'views/choose_foods.html',
+            controller: 'ChooseFoodsCtrl'
+        })
       .otherwise({
         redirectTo: '/'
       });
