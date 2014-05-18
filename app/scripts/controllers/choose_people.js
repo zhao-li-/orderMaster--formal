@@ -7,26 +7,7 @@ angular.module('orderMasterApp')
       'AngularJS',
       'Karma'
     ];
-    $scope.people =[
-        {
-            "name":"赵大"
-        },
-        {
-            "name":"钱二"
-        },
-        {
-            "name":"张三"
-        },
-        {
-            "name":"李四"
-        },
-        {
-            "name":"王五"
-        },
-        {
-            "name":"刘六"
-        }
-    ];
+    $scope.people =Person.get_all_people();
     $scope.back_to_order_details = function(){
         $location.path('/order_details')
     }
