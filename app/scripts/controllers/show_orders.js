@@ -21,14 +21,11 @@ angular.module('orderMasterApp')
     	var order_people=$.map(Order.get_orders(),function(order){
     		return order.person_name;
     	})
-        console.log(all_people,"1")
-        console.log(order_people,"2")
     	var no_order_people=$.map(all_people,function(person){
     		if($.inArray(person,order_people)==-1){
     			return person;
     		}
     	})
-        console.log(no_order_people,"------")
     	$scope.no_order_people = no_order_people;
     }
     $scope.show_no_order_people();
