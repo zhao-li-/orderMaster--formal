@@ -1,0 +1,22 @@
+<header class="header">
+	订单显示
+	<button class="btn btn-primary header-left" ng-click='back_to_order_details()' >Back</button>
+</header>
+<div style="color:blue">
+	{{order_quantity}}人已定
+</div>
+<ul class="list-style-2 ">
+        <li class=" clearfix btn-default"  ng-repeat="order in orders" >
+            <p style="color: #000000;float:left;margin-top: 8px">{{order.person_name}}</p>
+            <!-- <p style="color: #000000;float:right;margin-top: 8px">￥{{order[food][price]}}</p> -->
+        </li>
+    </ul>
+<div style="color:blue">
+	{{no_order_quantity}}人未定
+</div>
+<ul class="list-style-2 ">
+        <li class=" clearfix btn-default"  ng-repeat="no_order_person in no_order_people" >
+            <p style="color: #000000;float:left;margin-top: 8px">{{no_order_person.name}}</p>
+            <!-- <p style="color: #000000;float:right;margin-top: 8px">￥{{order[food][price]}}</p> -->
+        </li>
+    </ul>
