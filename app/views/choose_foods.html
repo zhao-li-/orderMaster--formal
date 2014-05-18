@@ -4,9 +4,9 @@
 </header>
 <ul class="list-style-2 ">
     <li class=" clearfix btn-default"  ng-repeat="food in foods" ng-click = 'choose_food(food.name)'>
-        <p style="color: #000000;float:left;margin-top: 8px">{{food.name}}</p>
-        <span class="glyphicon glyphicon-circle-arrow-right " style="color: #8F8F8F;float:right;margin-top: 20px;margin-left:20px"></span>
-        <p style="color: #000000;float:right;margin-top: 8px">￥{{food.price}}</p>
+        <p class="p-left">{{food.name}}</p>
+        <span class="glyphicon glyphicon-circle-arrow-right p-right" ></span>
+        <p class="p-right1">￥{{food.price}}</p>
     </li>
 </ul>
 

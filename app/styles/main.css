@@ -45,3 +45,41 @@
     font-size:14px;
     position: relative;
 }
+
+.p-left{
+    color: #000000;
+    float:left;
+    margin-top: 8px;
+}
+
+.p-right{
+    color: #8F8F8F;
+    float:right;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.p-right1{
+    color: #000000;
+    float:right;
+    margin-top: 8px;
+}
+
+.list-heading-1{
+    font-size: 20px;
+    background-color: #EEEEEE;
+    color: blue;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+}
+
+.list-heading-2{
+    font-size: 20px;
+    margin-top: -10px;
+    background-color: #EEEEEE;
+    color: blue;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+}
