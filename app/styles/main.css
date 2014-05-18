@@ -83,3 +83,23 @@
     line-height: 60px;
     padding-left: 15px;
 }
+
+.font-1{
+    font-size: 20px;
+}
+
+.right-1{
+    float:right;
+    margin-top: 20px;
+}
+
+.footer-1{
+    margin-top: -10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #EEEEEE;
+    color: blue;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+}

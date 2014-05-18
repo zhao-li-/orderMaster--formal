@@ -7,8 +7,11 @@
 </div>
 <ul class="list-group">
         <li class=" clearfix list-group-item"  ng-repeat="order in orders" >
-            <p style="color: #000000;float:left;margin-top: 8px">{{order.person_name}}</p>
-            <!-- <p style="color: #000000;float:right;margin-top: 8px">￥{{order[food][price]}}</p> -->
+            <div class="p-left">
+                <p class="font-1">{{order.person_name}}</p>
+                <p >{{order.restaurant_name}} {{order.food_name}}</p>
+            </div>
+            <p class="right-1">￥{{order.food_price}}</p>
         </li>
     </ul>
 <div class="list-heading-2">
@@ -16,7 +19,9 @@
 </div>
 <ul class="list-group ">
         <li class=" clearfix list-group-item"  ng-repeat="no_order_person in no_order_people" >
-            <p style="color: #000000;float:left;margin-top: 8px">{{no_order_person.name}}</p>
-            <!-- <p style="color: #000000;float:right;margin-top: 8px">￥{{order[food][price]}}</p> -->
+            <p class="p-left font-1">{{no_order_person}}</p>
         </li>
     </ul>
+<div class="footer-1">
+    {{order_quantity}}人已定，{{no_order_quantity}}人未定，总计{{total_money()}}元
+</div>
