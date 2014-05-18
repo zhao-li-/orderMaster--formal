@@ -21,4 +21,8 @@ angular.module('orderMasterApp')
     $scope.back_to_order_details = function(){
         $location.path('/order_details')
     }
+    $scope.choose_restaurant = function(restaurant_name){
+      localStorage.setItem("restaurant_name", restaurant_name);
+      $location.path('/order_details')
+    }
   });

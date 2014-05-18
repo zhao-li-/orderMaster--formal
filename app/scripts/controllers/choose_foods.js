@@ -68,8 +68,12 @@ angular.module('orderMasterApp')
   ]
 
 };
-    // $scope.foods =all_foods[]
+    $scope.foods =all_foods[localStorage.getItem('restaurant_name')];
     $scope.back_to_order_details = function(){
         $location.path('/order_details')
+    }
+    $scope.choose_food = function(food_name){
+      localStorage.setItem("food_name", food_name);
+      $location.path('/order_details')
     }
   });

@@ -30,7 +30,7 @@ angular.module('orderMasterApp')
     $scope.back_to_order_details = function(){
         $location.path('/order_details')
     }
-    $scope.choose_person = functions(person_name){
+    $scope.choose_person = function(person_name){
         localStorage.setItem("person_name", person_name);
         $location.path('/order_details')
     }
