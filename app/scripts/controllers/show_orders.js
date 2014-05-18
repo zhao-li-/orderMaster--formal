@@ -19,9 +19,12 @@ angular.module('orderMasterApp')
     		return {name:order.person_name}
     	})
     	var no_order_people=$.map(all_people,function(person){
-    		
+    		if($.inArray(person,order_people)){
+    			console.log()
+    			return person;
+    		}
     	})
-    	$scope.no_order_people = all_people;
+    	$scope.no_order_people = no_order_people;
     }
     $scope.show_no_order_people();
   });
