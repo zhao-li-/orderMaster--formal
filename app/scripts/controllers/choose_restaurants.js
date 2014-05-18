@@ -7,22 +7,13 @@ angular.module('orderMasterApp')
       'AngularJS',
       'Karma'
     ];
-    $scope.restaurants =[
-    {
-        "name": "KFC"
-    },
-    {
-        "name": "7-11"
-    },
-    {
-        "name": "成都小吃"
-    }
-];
+    $scope.restaurants =Restaurant.get_all_restaurants();
     $scope.back_to_order_details = function(){
         $location.path('/order_details')
     }
     $scope.choose_restaurant = function(restaurant_name){
-      localStorage.setItem("restaurant_name", restaurant_name);
+      var restaurant = new Restaurant(restaurant_name);
+      restaurant.save();
       $location.path('/order_details')
     }
   });

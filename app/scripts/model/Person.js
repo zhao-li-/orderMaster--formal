@@ -1,4 +1,6 @@
-function Person(){}
+function Person(person_name){
+    this.name=person_name;
+}
 
 Person.get_all_people=function(){
 	return [
@@ -25,4 +27,8 @@ Person.get_all_people=function(){
 
 Person.get_chose_person_name = function(){
 	return localStorage.getItem('person_name');
+}
+
+Person.prototype.save=function(){
+    localStorage.setItem("person_name", this.name);
 }

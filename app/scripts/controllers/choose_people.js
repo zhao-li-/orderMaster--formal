@@ -12,7 +12,8 @@ angular.module('orderMasterApp')
         $location.path('/order_details')
     }
     $scope.choose_person = function(person_name){
-        localStorage.setItem("person_name", person_name);
-        $location.path('/order_details')
+      var person = new Person(person_name);
+      person.save();
+      $location.path('/order_details')
     }
   });
