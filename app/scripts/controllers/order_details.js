@@ -20,10 +20,10 @@ angular.module('orderMasterApp')
             $location.path('/')
         }
         $scope.person_name =Person.get_chose_person_name();
-        $scope.restaurant_name =Restaurant.get_chose_restaurant_name()
-        $scope.food_name = localStorage.getItem('food_name');
-        $scope.choosed_restaurant = !localStorage.getItem('restaurant_name');
-        $scope.choosed_all_infomation = !localStorage.getItem('person_name') && !localStorage.getItem('restaurant_name') && !localStorage.getItem('food_name');
+        $scope.restaurant_name =Restaurant.get_chose_restaurant_name();
+        $scope.food_name = Food.get_chose_food_name();
+        $scope.choosed_restaurant = !Restaurant.get_chose_restaurant_name();
+        $scope.choosed_all_infomation = !Person.get_chose_person_name() || !Restaurant.get_chose_restaurant_name() || !Food.get_chose_food_name();
         $scope.confirm_order = function(){
             
         }
