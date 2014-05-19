@@ -1,27 +1,28 @@
 <header class="header">
-	订单显示
-	<button class="btn btn-primary header-left" ng-click='back_to_order_details()' >Back</button>
+    订单显示
+    <button class="btn btn-primary header-left" ng-click='back_to_order_details()'>Back</button>
 </header>
 <div class="list-heading-1">
-	{{order_quantity}}人已定
+    {{order_quantity}}人已定
 </div>
 <ul class="list-group">
-        <li class=" clearfix list-group-item"  ng-repeat="order in orders" >
-            <div class="p-left">
-                <p class="font-1">{{order.person_name}}</p>
-                <p >{{order.restaurant_name}} {{order.food_name}}</p>
-            </div>
-            <p class="right-1" style="{{order.food_price|color1}}">￥{{order.food_price}}</p>
-        </li>
-    </ul>
+    <li class=" clearfix list-group-item" ng-repeat="order in orders">
+        <div class="p-left">
+            <p class="font-1">{{order.person_name}}</p>
+
+            <p>{{order.restaurant_name}} {{order.food_name}}</p>
+        </div>
+        <p class="right-1" style="{{order.food_price|color1}}">￥{{order.food_price}}</p>
+    </li>
+</ul>
 <div class="list-heading-2">
-	{{no_order_quantity}}人未定
+    {{no_order_quantity}}人未定
 </div>
 <ul class="list-group ">
-        <li class=" clearfix list-group-item"  ng-repeat="no_order_person in no_order_people" >
-            <p class="p-left font-1">{{no_order_person}}</p>
-        </li>
-    </ul>
+    <li class=" clearfix list-group-item" ng-repeat="no_order_person in no_order_people">
+        <p class="p-left font-1">{{no_order_person}}</p>
+    </li>
+</ul>
 <div class="footer-1">
     {{order_quantity}}人已定，{{no_order_quantity}}人未定，总计{{total_money}}元
 </div>
