@@ -50,5 +50,4 @@ Order.get_total_money=function(){
         money = money+Order.get_orders()[i].food_price;
     }
     return money;
-    }
 }
