@@ -43,3 +43,12 @@ Order.prototype.process_order =function(){
 Order.clear_food_data = function(){
 	localStorage.removeItem('food_name');
 }
+
+Order.get_total_money=function(){
+	var money=0
+    for(var i=0;i<Order.get_orders().length;i++){
+        money = money+Order.get_orders()[i].food_price;
+    }
+    return money;
+    }
+}

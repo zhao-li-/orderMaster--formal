@@ -28,11 +28,5 @@ angular.module('orderMasterApp')
     	$scope.no_order_people = no_order_people;
     }
     $scope.show_no_order_people();
-    $scope.total_money = function(){
-        var money=0
-        for(var i=0;i<Order.get_orders().length;i++){
-            money = money+Order.get_orders()[i].food_price;
-        }
-        return money;
-    }
+    $scope.total_money = Order.get_total_money();
   });
