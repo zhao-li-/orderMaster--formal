@@ -37,12 +37,8 @@ Order.prototype.process_order =function(){
 	localStorage.setItem("orders", JSON.stringify(orders));	
     localStorage.removeItem('food_name');
     localStorage.removeItem('person_name');
-    // var order_details_page_element = document.getElementById("order_details_page")
-    // if(order_details_page_element) {
-    //     var scope = angular.element(order_details_page_element).scope()
-    //     scope.$apply(function() {
-    //         scope.person_name =Person.get_chose_person_name();
-    //         scope.food_name = Food.get_chose_food_name();
-    //     })
-    // }																																																						
+}
+
+Order.clear_food_data = function(){
+	localStorage.removeItem('food_name');
 }
