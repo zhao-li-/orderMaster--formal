@@ -51,3 +51,18 @@ Order.get_total_money=function(){
     }
     return money;
 }
+
+Order.get_no_order_people=function(){
+	var all_people = $.map(Person.get_all_people(),function(person){
+            return person.name;
+        });
+    	var order_people=$.map(Order.get_orders(),function(order){
+    		return order.person_name;
+    	})
+    	var no_order_people=$.map(all_people,function(person){
+    		if($.inArray(person,order_people)==-1){
+    			return person;
+    		}
+    	})
+    return no_order_people;
+}
