@@ -11,7 +11,6 @@ angular.module('orderMasterApp')
         $location.path('/')
     };
     $scope.orders=Order.get_orders();
-    console.log(Order.get_orders())
     $scope.order_quantity = Order.get_orders().length;
     $scope.no_order_quantity = Person.get_all_people().length - $scope.order_quantity;
     $scope.show_no_order_people =function(){
