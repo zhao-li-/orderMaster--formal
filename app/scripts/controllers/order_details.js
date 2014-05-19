@@ -31,7 +31,7 @@ angular.module('orderMasterApp')
         $scope.choosed_restaurant = !Restaurant.get_chose_restaurant_name();
         $scope.confirm_order = function(){
             var order = new Order();
-            Order.process_order();
+            order.process_order();
             $scope.init_data();
         }
     });

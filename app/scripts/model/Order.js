@@ -5,6 +5,7 @@ function Order(){
 	var food = $.grep(Food.get_all_foods()[Restaurant.get_chose_restaurant_name()],function(food){
 		return food.name==Food.get_chose_food_name()
 	})[0];
+	console.log(food,"food")
 	this.food_name=food.name;
 	this.food_price = food.price;
 }
