@@ -17,16 +17,16 @@ angular
                 templateUrl: 'views/order_details.html',
                 controller: 'OrderDetailsCtrl'
             })
-            .when('/choose_people', {
-                templateUrl: 'views/choose_people.html',
+            .when('/choose_person', {
+                templateUrl: 'views/choose_person.html',
                 controller: 'ChoosePeopleCtrl'
             })
-            .when('/choose_restaurants', {
-                templateUrl: 'views/choose_restaurants.html',
+            .when('/choose_restaurant', {
+                templateUrl: 'views/choose_restaurant.html',
                 controller: 'ChooseRestaurantsCtrl'
             })
-            .when('/choose_foods', {
-                templateUrl: 'views/choose_foods.html',
+            .when('/choose_food', {
+                templateUrl: 'views/choose_food.html',
                 controller: 'ChooseFoodsCtrl'
             })
             .when('/show_orders', {

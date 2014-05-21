@@ -8,15 +8,15 @@ angular.module('orderMasterApp')
             'Karma'
         ];
         $scope.choose_people = function () {
-            $location.path('/choose_people')
+            $location.path('/choose_person')
         }
         $scope.choose_restaurants = function () {
             Order.clear_food_data();
             $scope.food_name = Food.get_chose_food_name();
-            $location.path('/choose_restaurants')
+            $location.path('/choose_restaurant')
         }
         $scope.choose_foods = function () {
-            $location.path('/choose_foods')
+            $location.path('/choose_food')
         }
         $scope.back_to_main = function () {
             $location.path('/')
