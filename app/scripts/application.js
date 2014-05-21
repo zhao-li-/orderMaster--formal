@@ -1,6 +1,6 @@
 'use strict';
 
-var myModule = angular.module('orderMasterApp')
+var myModule = angular.module('orderMasterApp');
 
 myModule.filter('color1', function () {
     return function (food_price) {
