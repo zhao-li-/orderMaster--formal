@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('orderMasterApp')
-    .controller('ChoosePeopleCtrl', function ($scope, $location) {
+    .controller('ChoosePersonCtrl', function ($scope, $location) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',

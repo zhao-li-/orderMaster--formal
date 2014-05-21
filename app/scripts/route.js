@@ -19,15 +19,15 @@ angular
             })
             .when('/choose_person', {
                 templateUrl: 'views/choose_person.html',
-                controller: 'ChoosePeopleCtrl'
+                controller: 'ChoosePersonCtrl'
             })
             .when('/choose_restaurant', {
                 templateUrl: 'views/choose_restaurant.html',
-                controller: 'ChooseRestaurantsCtrl'
+                controller: 'ChooseRestaurantCtrl'
             })
             .when('/choose_food', {
                 templateUrl: 'views/choose_food.html',
-                controller: 'ChooseFoodsCtrl'
+                controller: 'ChooseFoodCtrl'
             })
             .when('/show_orders', {
                 templateUrl: 'views/show_orders.html',
